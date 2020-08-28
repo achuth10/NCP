@@ -7,13 +7,13 @@
 	// Draw the chart and set the chart values
 	function drawChart() {
 	  var data = google.visualization.arrayToDataTable([
-	  ['Visiters', 'Visiters per Day'],
-	  ['Visiters', 8],
+	  ['Visitors', 'Visitors per Day'],
+	  ['Visitors', 8],
 	  ['Registered',2]
 	]);
 	
 	  // Optional; add a title and set the width and height of the chart
-	  var options = {'title':'Total visiters', 'width':300, 'height':100};
+	  var options = {'title':'Total visitors', 'width':300, 'height':100};
 	
 	  // Display the chart inside the <div> element with id="piechart"
 	  var chart = new google.visualization.PieChart(document.getElementById('piechart'));

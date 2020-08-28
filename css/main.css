@@ -1,0 +1,38 @@
+main {
+    display: flex;
+    justify-content: center;
+  }
+  
+  table {
+    max-width: 100%;
+  }
+  
+  tr:nth-child(odd) {
+    background-color: #eee;
+  }
+  
+  th {
+    background-color: #555;
+    color: #fff;
+  }
+  
+  th,
+  td {
+    text-align: left;
+    padding: 0.5em 1em;
+  }
+  .selector-for-some-widget {
+    box-sizing: content-box;
+  }
+  .sector-image {
+    height: 200px;
+    width: 350px;
+  }
+  .col {
+    border-block: 10px;
+    border-block-color: black;
+  }
+  .below_event {
+    border-block-width: 3px;
+    border-block-color: black;
+  }
