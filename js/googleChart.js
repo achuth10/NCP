@@ -13,7 +13,7 @@
 	]);
 	
 	  // Optional; add a title and set the width and height of the chart
-	  var options = {'title':'Total visitors', 'width':300, 'height':100};
+	  var options = {'title':'Total visitors', 'width':500, 'height':300};
 	
 	  // Display the chart inside the <div> element with id="piechart"
 	  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
@@ -32,7 +32,7 @@
 			var options = {
 			  title: 'Performance',
 			  curveType: 'function',
-			  'width':450, 'height':300,
+			  'width':600, 'height':300,
 			  legend: { position: 'bottom' }
 			};
 	
