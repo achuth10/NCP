@@ -1,0 +1,20 @@
+html {
+	font-family: "Helevetica", sans-serif;
+  }
+  
+  body {
+	color: #333;
+	font-weight: 100;
+	margin: 0 auto;
+  }
+.toolbar{
+	margin-top: 50px;
+}
+  #editor {
+	padding-top: 10px;
+	font-size: 24px;
+	border: solid 1px #ccc;
+    padding: 20px;
+	min-height: 200px;
+	margin-top: 20px;
+  }
