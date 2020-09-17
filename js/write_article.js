@@ -1,3 +1,3 @@
 function format(command) {
-	document.execCommand(command, false, undefined);
+	document.execCommand(command, false);
 }
