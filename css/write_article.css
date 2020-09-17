@@ -11,12 +11,9 @@ html {
 	margin-top: 50px;
 }
   #editor {
-	padding-top: 10px;
 	font-size: 24px;
 	border: solid 1px #ccc;
-    padding: 20px;
 	min-height: 200px;
-	margin-top: 20px;
   }
 
   .editor{
@@ -54,4 +51,18 @@ html {
 	.icon-bar a:hover {
 	 color: #000;
 	}
+
+	#publishBtn{
+		margin-top: 30px;
+		float: right;
+	}
 	
+
+	#headlineForm{
+		margin-top: 30px;
+	}
+
+
+	[contentEditable=true]:empty:not(:focus):before{
+		content:attr(data-text)
+	}
