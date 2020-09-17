@@ -32,7 +32,7 @@
 			var options = {
 			  title: 'Performance',
 			  curveType: 'function',
-			  'width':600, 'height':300,
+			  'width':500, 'height':300,
 			  legend: { position: 'bottom' }
 			};
 	
