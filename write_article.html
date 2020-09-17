@@ -14,16 +14,30 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="css/write_article.css">
+		<style>
+			
+			</style>
 	</head>
 
 	<body>
 		<div class="container">
+			<div class="icon-bar">
+				<a href="#"><i class="fa fa-paw"></i></a>
+				<hr style="align-self: center;width: 70%;">
+			  <a href="#"><i class="fa fa-home"></i></a> 
+			  <a href="#"><i class="fa fa-filter"></i></a> 
+			  <a href="#"><i class="fa fa-calendar"></i></a> 
+			  <a href="#"><i class="fa fa-question"></i></a>
+			  <a href="#"><i class="fa fa-address-book"></i></a> 
+			</div>
+			<div class="editor">
 			<div class="toolbar">
 				<a href="javascript:void(0)" onclick="format('bold')"><span class="fa fa-bold fa-fw"></span></a>
 				<a href="javascript:void(0)" onclick="format('italic')"><span class="fa fa-italic fa-fw"></span></a>
 				<a href="javascript:void(0)" onclick="format('insertunorderedlist')"><span class="fa fa-list fa-fw"></span></a>
 			</div>
 			<div id="editor" contenteditable="true"></div>
+		</div>
 		</div>
 
 		<script src="js/write_article.js"></script>
