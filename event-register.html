@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>event-register</title>
+    <link rel="stylesheet" href="css/sign_in_event.css">
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- <style>
+    body{
+      font-family: 'Oswald', sans-serif;
+    }
+  </style> -->
+</head>
+<body>
+  
+<div class="icon-bar">
+  <a href="admin_panel.html"><i class="fa fa-paw"></i></a>
+  <hr style="align-self: center;width: 70%;">
+<a href="#"><i class="fa fa-home"></i></a> 
+<a href="#"><i class="fa fa-filter"></i></a> 
+<a href="#"><i class="fa fa-calendar"></i></a> 
+<a href="#"><i class="fa fa-question"></i></a>
+<a href="#"><i class="fa fa-address-book"></i></a> 
+</div>
+    <div class="wrapper">
+        <div class="form-holder">
+           
+            <h2>Create an event</h2>
+            <form action="" class="form">
+                <div class="form-group">
+                   
+                    <input type="text" placeholder="Event name">
+                </div>
+                <div class="form-group">
+                   
+                    <input type="text" placeholder="Organizer">
+                </div>
+                <div class="form-group">
+                   
+                    <input type="text" placeholder="Venue">
+                </div>
+                <div class="form-group">
+                   
+                    <input type="time" placeholder="Time">
+                </div>
+                <div class="form-group">
+                   
+                    <input type="date" placeholder="Date">
+                </div>
+                <div class="form-group">
+                    <label>
+                        <span>Description</span>
+                        <textarea rows = "5" cols = "50" name = "description" placeholder="description">
+                          
+                       </textarea>
+                      </label>
+                    
+                </div>
+                <div class="form-group">
+                    <input type="text" name="example" list="exampleList" placeholder="Category">
+                    <datalist id="exampleList">
+                    <option value="automoblies">  
+                    <option value="chemicals">
+                    <option value="defence">
+                      
+                    </datalist>
+                </div>
+                
+                   
+                    <h2>Upload a banner</h2>
+          <img src="bg.jpg" width="500" height="300" >
+                
+                <div class="form-group">
+                   
+                        <input type="file" id="img" name="img"  >
+                    </div>
+                    <BR></BR>
+                    <div class="form-group">
+                    <button type="submit">SUBMIT</button> 
+                    <br></br>
+                   
+                </div>
+                
+              
+            </form>
+           
+              </div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
