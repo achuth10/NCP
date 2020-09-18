@@ -14,10 +14,12 @@ html {
 	font-size: 24px;
 	border: solid 1px #ccc;
 	min-height: 200px;
+	margin-top: 20px;
   }
 
   .editor{
 	  margin-left: 120px;
+
   }
 
 
