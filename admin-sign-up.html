@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login</title>
-    <link rel="stylesheet" href="css/sign_in_event.css">
+    <title>ADMIN-SIGN-UP</title>
+    <link rel="stylesheet" href="css/login_style.css">
     <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
@@ -20,6 +20,72 @@
       font-family: 'Oswald', sans-serif;
     }
   </style> -->
+  <script type="text/javascript">
+    function Validate(){
+      let regex1=/^([a-z A-Z]+)$/;
+      let name=document.getElementById("name").value;
+      let regex2=/^([A-Z a-z 0-9 \. -]+)@([A-Z a-z 0-9 -]+).([a-z]{2,8})(.[a-z]{2,8})$/;
+      let username=document.getElementById("uname").value;
+      let regex3=/^([a-z A-Z 0-9]{8,})$/;
+      let password=document.getElementById("pass").value;
+      let regex4=/^([a-z A-Z 0-9]{8,})$/;
+      let confirm_password=document.getElementById("cpass").value;
+      let regex5=/^([A-Z a-z 0-9 \. -]+)@([A-Z a-z 0-9 -]+).([a-z]{2,8})(.[a-z]{2,8})$/;
+		  let email=document.getElementById("email").value;
+      
+  
+      if(name=="" || username=="" || password=="" || confirm_password==""  || email==""  )
+      {
+        window.alert("Enter All Fields");
+        return false;
+      }
+      if(password.length<8){
+        window.alert("Length of password should be more than 5");
+        return false;
+      }
+      if(password!=confirm_password){
+        window.alert("passwords should match");
+        return false;
+      }
+      if( password!=confirm_password){
+        window.alert("passwords are not equal");
+      }
+      if(regex1.test(name)){
+        if(regex2.test(username)){
+          if(regex3.test(password)){
+            if(regex4.test(confirm_password)){
+              
+                if(regex5.test(email)){
+                  return true;
+                }
+                else{
+                  window.alert("Invalid Email");
+                  return false;
+                }
+              
+             
+            }
+            else{
+              window.alert("Enter Valid password");
+              return false;
+            }
+          }
+          else{
+            window.alert("Enter Valid password");
+            return false;
+          }
+        }
+        else{
+          window.alert("Enter Valid Usename");
+          return false;
+        }		
+      }
+      else{
+        window.alert("Enter Valid Name");
+        return false;
+      }
+    }
+  </script>
 </head>
 <body>
 
@@ -43,40 +109,46 @@
 
     <div class="wrapper">
         <div class="form-holder">
+          <form action="#" onsubmit="return Validate()">
             <h2>ADMIN-SIGN-UP</h2>
             <form action="" class="form">
                 <div class="form-group">
                   
-                    <input type="text" placeholder="User name">
+                  <label class="label" for="name"></label><br>
+                  <input type="text" id="uname" placeholder="username" >
                 </div>
                 <div class="form-group">
                    
-                    <input type="text" placeholder="Full name">
+                  <label class="label" for="name"></label><br>
+                  <input type="text" id="name" placeholder="Full name" >
+                </div>
+                
+                <div class="form-group">
+                 
+                  <label class="label" for="pass"></label><br>
+                  <input type="password" id="pass" placeholder="password">
+                </div>
+                <div class="form-group">
+                  <label class="label" for="cpass"></label><br>
+					<input type="password" id="cpass" placeholder="re password">
                 </div>
                 <div class="form-group">
                     
-                    <input type="text" placeholder="Email">
-                </div>
-                <div class="form-group">
-                 
-                    <input type="password" placeholder="Password">
-                </div>
-                <div class="form-group">
-                  
-                    <input type="password" placeholder="Confirm Password">
+                  <label class="label" for="uname"></label><br>
+                  <input type="text" id="email" placeholder="mail" >
                 </div>
                 <div class="form-group">
                    <button type="submit">Sign Up</button> 
                 </div>
                 <div class="form-group">
-                    <a href="admin-sign-in.html" class="left-link">Sign in</a>
-                    <a href="user-sign-in.html" class="right-link">User login</a>
+                    <a href="admin-sign-in.html" class="left-link">ADMIN-SIGN-IN</a>
+                    <a href="user-sign-in.html" class="right-link">USER-SIGN-IN</a>
                 </div>
             </form>
         </div>
     </div>
 </div> 
-
+</form>
 <div class="jumbotron text-center" style="margin-bottom:0; height: 10px;background-color: black;color: white;">
   <h2>MAKE IN INDIA</h2>
 </div>

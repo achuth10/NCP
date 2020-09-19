@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login</title>
-    <link rel="stylesheet" href="css/sign_in_event.css">
+    <title>ADMIN-SIGN-IN</title>
+    <link rel="stylesheet" href="css/login_style.css">
     <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
@@ -20,6 +20,44 @@
       font-family: 'Oswald', sans-serif;
     }
   </style> -->
+  <script type="text/javascript">
+    function Validate(){
+      let regex1=/^([a-z A-Z]+)$/;
+      let name=document.getElementById("name").value;
+      
+      let regex2=/^([a-z A-Z 0-9]{8,})$/;
+      let password=document.getElementById("pass").value;
+      
+  
+      if(name=="" || password==""  )
+      {
+        window.alert("Enter All Fields");
+        return false;
+      }
+      if(password.length<5){
+        window.alert("Length of password should be more than 5");
+        return false;
+      }
+      
+      
+      if(regex1.test(name)){
+        if(regex2.test(password)){
+          window.open( "admin_panel.html")
+          return true;
+        }
+        else{
+          window.alert("Enter Valid password");
+          return false;
+        }		
+      }
+      else{
+        window.alert("Enter Valid Name");
+        return false;
+      }
+      
+      
+    }
+  </script>
 </head>
 <body>
 
@@ -43,16 +81,19 @@
 
     <div class="wrapper">
         <div class="form-holder">
+          <form action="#" onsubmit="return Validate()">
            
-            <h2>ADMIN-LOGIN</h2>
-            <form action="admin_panel.html" class="form">
+            <h2>ADMIN-SIGN-IN</h2>
+            <form action="" class="form">
                 <div class="form-group">
                    
-                    <input type="text" placeholder="User name">
+                  <label class="label" for="name"></label><br>
+					<input type="text" id="name" placeholder="name" >
                 </div>
                 <div class="form-group">
                    
-                    <input type="password" placeholder="Password">
+                  <label class="label" for="password"></label><br>
+					<input type="password" id="pass" placeholder="password">
                 </div>
                 <div class="form-group">
                    <button type="submit">Sign in</button> 
@@ -60,14 +101,15 @@
                    <button><a href="forgot-password.html">Forgot password</a></button>
                 </div>
                 <div class="form-group">
-                  <a href="admin-sign-up.html" class="left-link">Sign Up</a>
-                  <a href="user-sign-in.html" class="right-link">User login</a>
+                  <a href="admin-sign-up.html" class="left-link">ADMIN-SIGN-UP</a>
+                  <a href="user-sign-in.html" class="right-link">USER-SIGN-IN</a>
               </div>
                 
             </form>
               </div>
         </div>
     </div>
+  </form>
     <div class="jumbotron text-center" style="margin-bottom:0; height: 10px;background-color: black;color: white;">
         <h2>MAKE IN INDIA</h2>
 </body>
