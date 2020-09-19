@@ -1,6 +1,6 @@
-.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+.container 	 {
     padding: 0;
-    margin:0px;
+    margin-top: 30px;
 }
 .sideNav{
 	float: left;
@@ -21,8 +21,6 @@
   .active, .collapsible:hover {
 	background-color: #ccc;
   }
-  
-
   .content {
 	padding: 0 18px;
 	background-color: white;
