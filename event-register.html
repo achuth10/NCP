@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>event-register</title>
-    <link rel="stylesheet" href="css/sign_in_event.css">
+    <link rel="stylesheet" href="css/login_style.css">
     <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
@@ -24,36 +24,38 @@
 <body>
   
 <div class="icon-bar">
-<a href="admin_panel.html"><i class="fa fa-home"></i></a> 
+  <a href="index.html"><i class="fa fa-paw"></i></a>
+  <hr style="align-self: center;width: 70%;">
+<a href="#"><i class="fa fa-home"></i></a> 
 <a href="#"><i class="fa fa-filter"></i></a> 
 <a href="#"><i class="fa fa-calendar"></i></a> 
 <a href="#"><i class="fa fa-question"></i></a>
-<a href="edit_profile_page.html"><i class="fa fa-address-book"></i></a> 
+<a href="#"><i class="fa fa-address-book"></i></a> 
 </div>
     <div class="wrapper">
         <div class="form-holder">
            
-            <h2>Create an event</h2>
+            <h2>EVENT-REGINTER</h2>
             <form action="" class="form">
                 <div class="form-group">
                    
-                    <input type="text" placeholder="Event name">
+                    <input type="text" placeholder="event name" required>
                 </div>
                 <div class="form-group">
                    
-                    <input type="text" placeholder="Organizer">
+                    <input type="text" placeholder="Organizer" required>
                 </div>
                 <div class="form-group">
                    
-                    <input type="text" placeholder="Venue">
+                    <input type="text" placeholder="Venue" required>
                 </div>
                 <div class="form-group">
                    
-                    <input type="time" placeholder="Time">
+                    <input type="time" placeholder="Time" required>
                 </div>
                 <div class="form-group">
                    
-                    <input type="date" placeholder="Date">
+                    <input type="date" placeholder="Date" required>
                 </div>
                 <div class="form-group">
                     <label>
@@ -65,7 +67,7 @@
                     
                 </div>
                 <div class="form-group">
-                    <input type="text" name="example" list="exampleList" placeholder="Category">
+                    <input type="text" name="example" list="exampleList" placeholder="please select u r felid" required>
                     <datalist id="exampleList">
                     <option value="automoblies">  
                     <option value="chemicals">
@@ -75,17 +77,17 @@
                 </div>
                 
                    
-                    <h2>Upload a banner</h2>
+                    <h2>UPLOAD UR POSTER</h2>
           <img src="bg.jpg" width="500" height="300" >
                 
                 <div class="form-group">
                    
-                        <input type="file" id="img" name="img"  >
-                    </div>
-                    <BR></BR>
-                    <div class="form-group">
-                    <button type="submit">SUBMIT</button> 
-                    <br></br>
+                    <input type="file" id="img" name="img"  required>
+                </div>
+                <BR></BR>
+                <div class="form-group">
+                   <button type="submit">SUBMIT</button> 
+                   <br></br>
                    
                 </div>
                 
